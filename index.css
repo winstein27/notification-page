@@ -2,9 +2,50 @@
 
 * {
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 body {
   margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 0 1rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+:root {
+  --text-primary: hsl(224, 21%, 14%);
+  --text-secondary: hsl(219, 12%, 42%);
+  --highlight: hsl(226, 44%, 44%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.header {
+  margin: 2rem 0;
+}
+
+.header h2 {
+  color: var(--text-primary);
+  display: inline-block;
+  margin: 0;
+  font-size: 1.3rem;
+  width: 60%;
+}
+
+.header span {
+  background: var(--highlight);
+  color: var(--white);
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  width: 39%;
+  text-align: right;
+  padding: 0;
 }
