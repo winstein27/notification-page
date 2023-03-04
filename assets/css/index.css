@@ -51,6 +51,10 @@ body {
   padding: 0;
 }
 
+main > div {
+  margin: 1rem 0;
+}
+
 .unread {
   background: var(--unread-background);
   padding: 1rem;
@@ -84,6 +88,10 @@ body {
 
 .post h3 p.action {
   font-weight: 500;
+}
+
+.post h3 p.group {
+  color: var(--highlight);
 }
 
 .post p {
