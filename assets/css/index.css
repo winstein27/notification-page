@@ -18,6 +18,7 @@ body {
   --text-secondary: hsl(219, 12%, 42%);
   --highlight: hsl(226, 44%, 44%);
   --white: hsl(0, 0%, 100%);
+  --unread-background: hsl(210, 60%, 98%);
 }
 
 .header {
@@ -48,4 +49,44 @@ body {
   width: 39%;
   text-align: right;
   padding: 0;
+}
+
+.unread {
+  background: var(--unread-background);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.avatar {
+  display: inline-block;
+  width: 15%;
+  vertical-align: text-top;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.post {
+  display: inline-block;
+  width: 84%;
+  vertical-align: text-top;
+  padding-left: 1rem;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post h3 p {
+  display: inline;
+}
+
+.post h3 p.action {
+  font-weight: 500;
+}
+
+.post p {
+  margin: 0;
+  color: var(--text-secondary);
 }
