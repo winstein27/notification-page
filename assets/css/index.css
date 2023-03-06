@@ -51,6 +51,15 @@ body {
   padding: 0;
 }
 
+.header button:hover,
+.header button:active {
+  color: var(--highlight);
+}
+
+a {
+  text-decoration: none;
+}
+
 main > div {
   margin: 1rem 0;
 }
@@ -64,6 +73,7 @@ main > div {
 .avatar {
   display: inline-block;
   width: 15%;
+  max-width: 6rem;
   vertical-align: text-top;
 }
 
@@ -71,35 +81,53 @@ main > div {
   width: 100%;
 }
 
-.post {
+.notification {
   display: inline-block;
   width: 84%;
   vertical-align: text-top;
   padding-left: 1rem;
 }
 
-.post h3 {
+.notification h3 {
   margin: 0;
 }
 
-.post h3 p {
+.notification h3 p {
   display: inline;
 }
 
-.post h3 p.action {
-  font-weight: 500;
+.notification h3 .user {
+  color: inherit;
 }
 
-.post h3 p.group {
+.notification h3 .user:hover,
+.notification h3 .user:active {
   color: var(--highlight);
 }
 
-.post p {
+.notification h3 p.action {
+  font-weight: 500;
+}
+
+.notification h3 .post {
+  color: inherit;
+}
+
+.notification h3 .post:hover,
+.notification h3 .post:active {
+  color: var(--highlight);
+}
+
+.notification h3 .group {
+  color: var(--highlight);
+}
+
+.notification p {
   margin: 0;
   color: var(--text-secondary);
 }
 
-.post .private-message {
+.notification .private-message {
   border: 1px solid var(--text-secondary);
   padding: 1rem;
   margin: 0.8rem 0;
