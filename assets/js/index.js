@@ -1,6 +1,9 @@
 const btnRead = document.querySelector('#btn-read');
+const notificationsSpan = document.querySelector('#notifications-number');
 
 const readAll = (event) => {
+  notificationsSpan.style.display = 'none';
+
   const unreadNotifications = document.querySelectorAll('.unread');
 
   unreadNotifications.forEach((unreadNotification) => {
