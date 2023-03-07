@@ -19,6 +19,7 @@ body {
   --highlight: hsl(226, 44%, 44%);
   --white: hsl(0, 0%, 100%);
   --unread-background: hsl(210, 60%, 98%);
+  --shadow: hsl(205, 33%, 90%);
 }
 
 .header {
@@ -131,4 +132,28 @@ main > div {
   border: 1px solid var(--text-secondary);
   padding: 1rem;
   margin: 0.8rem 0;
+}
+
+.notification .picture-action {
+  display: inline-block;
+  width: 79%;
+  vertical-align: text-top;
+}
+
+.notification .picture {
+  display: inline-block;
+  width: 20%;
+  vertical-align: text-top;
+  text-align: right;
+}
+
+.notification .picture img {
+  width: 100%;
+  max-width: 6rem;
+}
+
+.notification .picture img:hover,
+.notification .picture img:active {
+  box-shadow: var(--shadow) 0px 0px 0px 3px;
+  border-radius: 15px;
 }
