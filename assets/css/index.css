@@ -19,7 +19,9 @@ body {
   --highlight: hsl(226, 44%, 44%);
   --white: hsl(0, 0%, 100%);
   --unread-background: hsl(210, 60%, 98%);
+  --message-background: hsl(211, 68%, 94%);
   --shadow: hsl(205, 33%, 90%);
+  --red: hsl(1, 90%, 64%);
 }
 
 .header {
@@ -128,10 +130,24 @@ main > div {
   color: var(--text-secondary);
 }
 
+.unread .unread-pin {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+  padding: 3px;
+  background: var(--red);
+  border-radius: 25px;
+}
+
 .notification .private-message {
   border: 1px solid var(--text-secondary);
   padding: 1rem;
   margin: 0.8rem 0;
+}
+
+.notification .private-message:hover,
+.notification .private-message:active {
+  background: var(--message-background);
 }
 
 .notification .picture-action {
